@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#080810"/>
+      <stop offset="1" stop-color="#0d0d1a"/>
+    </linearGradient>
+    <radialGradient id="orbGold" cx="0.15" cy="0.2" r="0.5">
+      <stop offset="0" stop-color="#c8960c" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#c8960c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orbBlue" cx="0.9" cy="0.85" r="0.55">
+      <stop offset="0" stop-color="#4f9cf9" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#4f9cf9" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0 L0 0 0 60" fill="none" stroke="#1a1a30" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.6"/>
+  <rect width="1200" height="630" fill="url(#orbGold)"/>
+  <rect width="1200" height="630" fill="url(#orbBlue)"/>
+
+  <!-- Logo mark -->
+  <g transform="translate(90, 200)">
+    <g transform="scale(3.0)">
+      <circle cx="12" cy="12" r="6.5" fill="#c8960c"/>
+      <circle cx="36" cy="12" r="6.5" fill="#c8960c"/>
+      <circle cx="60" cy="12" r="6.5" fill="#c8960c"/>
+      <circle cx="12" cy="36" r="6.5" fill="#4f9cf9"/>
+      <circle cx="36" cy="36" r="6.5" fill="#c8960c"/>
+      <circle cx="60" cy="36" r="6.5" fill="#4f9cf9"/>
+      <circle cx="12" cy="60" r="6.5" fill="#c8960c"/>
+      <circle cx="36" cy="60" r="6.5" fill="#c8960c"/>
+      <circle cx="60" cy="60" r="6.5" fill="#c8960c"/>
+    </g>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(380, 240)">
+    <text x="0" y="0" font-family="'Syne','Helvetica Neue',Arial,sans-serif" font-weight="800" font-size="140" fill="#f0ede8" letter-spacing="-2">ZIVIO</text>
+    <text x="6" y="80" font-family="'Space Mono','Courier New',monospace" font-weight="700" font-size="40" fill="#c8960c" letter-spacing="14">DIGITAL</text>
+  </g>
+
+  <!-- Divider -->
+  <rect x="90" y="430" width="80" height="4" fill="#c8960c"/>
+
+  <!-- Tagline -->
+  <text x="90" y="490" font-family="'Syne','Helvetica Neue',Arial,sans-serif" font-weight="700" font-size="44" fill="#f0ede8">
+    WEB. <tspan fill="#c8960c">BRAND.</tspan> <tspan fill="#4f9cf9">IT.</tspan> GROWTH.
+  </text>
+
+  <!-- Subtext -->
+  <text x="90" y="540" font-family="'DM Sans','Helvetica Neue',Arial,sans-serif" font-weight="400" font-size="26" fill="#a0a0b8">
+    Calgary's digital marketing + managed IT — one team, one invoice.
+  </text>
+
+  <!-- Bottom corner badge -->
+  <text x="90" y="590" font-family="'Space Mono','Courier New',monospace" font-weight="700" font-size="20" fill="#3a3a55" letter-spacing="4">CALGARY · AB · CANADA</text>
+  <text x="1110" y="590" text-anchor="end" font-family="'Space Mono','Courier New',monospace" font-weight="700" font-size="20" fill="#3a3a55" letter-spacing="4">ZIVIODIGITAL</text>
+</svg>
