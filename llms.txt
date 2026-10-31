@@ -1,0 +1,30 @@
+# Zivio Digital
+
+> Calgary agency for complete business branding, custom websites, digital marketing, managed IT and cloud services. One accountable team from logo to launch, serving Calgary and nearby towns (Airdrie, Cochrane, Okotoks, Chestermere, Strathmore, Crossfield).
+
+## Services
+
+- Complete business branding: logo, brand identity, guidelines, print, signage, social profiles and professional email, designed together.
+- Custom website design and development: fast, mobile-first websites built for local search, with hosting and maintenance.
+- Custom web applications: admin portals, booking and registration systems, tournament and event platforms.
+- Digital marketing: local SEO, Google Business Profile, Google and Meta ads, social media and email campaigns.
+- Managed IT: helpdesk support, device setup, servers, backup and disaster recovery.
+- Networks and security: network design, Wi-Fi, firewalls, cybersecurity, VoIP and surveillance.
+- Cloud and IT consulting: Microsoft 365 and Google Workspace setup and migration, cloud backup, IT strategy.
+
+## Work
+
+- ARA Electrical Ltd. (https://araelectrical.ca/): website, private admin portal for quotes, projects and homeowner handovers, and an NFC contact card.
+- Skyview Football Club (https://skyviewfc.ca/): brand and logo, website, and a tournament portal where team managers register, submit rosters and get schedules, with fixtures, live scores, game sheets and a live stream page.
+- Hawk Eye Immigration (https://hawkeyeimmigration.com/): logo and brand identity, and website.
+
+## Products
+
+- Zivio TapProfile (https://tapprofile.netlify.app/): NFC cards and QR codes that open a business's own mobile page.
+
+## Contact
+
+- Website: https://ziviodigital.netlify.app/
+- Email: hello@ziviodigital.ca
+- Request a consultation: https://ziviodigital.netlify.app/#contact
+- Privacy policy: https://ziviodigital.netlify.app/privacy/

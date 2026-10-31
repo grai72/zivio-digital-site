@@ -1,30 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <!-- Share image source. og-image.png is rendered from this at 1200x630. -->
   <defs>
+    <style>
+      .head { font-family: 'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif; }
+      .body { font-family: Inter, 'Segoe UI', Arial, sans-serif; }
+    </style>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#080810"/>
       <stop offset="1" stop-color="#0d0d1a"/>
     </linearGradient>
-    <radialGradient id="orbGold" cx="0.15" cy="0.2" r="0.5">
-      <stop offset="0" stop-color="#c8960c" stop-opacity="0.35"/>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0.3">
+      <stop offset="0" stop-color="#e8b84b"/>
+      <stop offset="1" stop-color="#c8960c"/>
+    </linearGradient>
+    <radialGradient id="glowGold" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#c8960c" stop-opacity="0.28"/>
       <stop offset="1" stop-color="#c8960c" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="orbBlue" cx="0.9" cy="0.85" r="0.55">
-      <stop offset="0" stop-color="#4f9cf9" stop-opacity="0.3"/>
+    <radialGradient id="glowBlue" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#4f9cf9" stop-opacity="0.22"/>
       <stop offset="1" stop-color="#4f9cf9" stop-opacity="0"/>
     </radialGradient>
-    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
-      <path d="M60 0 L0 0 0 60" fill="none" stroke="#1a1a30" stroke-width="1"/>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1"/>
     </pattern>
   </defs>
 
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect width="1200" height="630" fill="url(#grid)" opacity="0.6"/>
-  <rect width="1200" height="630" fill="url(#orbGold)"/>
-  <rect width="1200" height="630" fill="url(#orbBlue)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <circle cx="1060" cy="90" r="360" fill="url(#glowGold)"/>
+  <circle cx="120" cy="600" r="340" fill="url(#glowBlue)"/>
 
-  <!-- Logo mark -->
-  <g transform="translate(90, 200)">
-    <g transform="scale(3.0)">
+  <!-- Logo -->
+  <g transform="translate(80 72)">
+    <g transform="scale(0.72)">
       <circle cx="12" cy="12" r="6.5" fill="#c8960c"/>
       <circle cx="36" cy="12" r="6.5" fill="#c8960c"/>
       <circle cx="60" cy="12" r="6.5" fill="#c8960c"/>
@@ -35,28 +44,32 @@
       <circle cx="36" cy="60" r="6.5" fill="#c8960c"/>
       <circle cx="60" cy="60" r="6.5" fill="#c8960c"/>
     </g>
+    <text x="72" y="24" class="head" font-size="26" font-weight="800" fill="#f0ede8" letter-spacing="3">ZIVIO</text>
+    <text x="72" y="48" class="body" font-size="14" font-weight="500" fill="#a0a0b8" letter-spacing="4">DIGITAL</text>
   </g>
 
-  <!-- Wordmark -->
-  <g transform="translate(380, 240)">
-    <text x="0" y="0" font-family="'Syne','Helvetica Neue',Arial,sans-serif" font-weight="800" font-size="140" fill="#f0ede8" letter-spacing="-2">ZIVIO</text>
-    <text x="6" y="80" font-family="'Space Mono','Courier New',monospace" font-weight="700" font-size="40" fill="#c8960c" letter-spacing="14">DIGITAL</text>
+  <!-- Headline -->
+  <text class="head" font-size="68" font-weight="800" fill="#f0ede8" letter-spacing="-1.5">
+    <tspan x="80" y="272">Complete brands, websites</tspan>
+    <tspan x="80" y="350">&amp; IT that <tspan fill="url(#gold)">scales.</tspan></tspan>
+  </text>
+
+  <text x="80" y="420" class="body" font-size="26" fill="#a0a0b8">Logo to launch, cloud to helpdesk. One accountable team.</text>
+
+  <!-- Service chips -->
+  <g class="body" font-size="18" font-weight="600">
+    <rect x="80" y="476" width="122" height="44" rx="22" fill="#c8960c" fill-opacity="0.12" stroke="#c8960c" stroke-opacity="0.45"/>
+    <text x="141" y="504" text-anchor="middle" fill="#e8b84b">Branding</text>
+    <rect x="216" y="476" width="122" height="44" rx="22" fill="#c8960c" fill-opacity="0.12" stroke="#c8960c" stroke-opacity="0.45"/>
+    <text x="277" y="504" text-anchor="middle" fill="#e8b84b">Websites</text>
+    <rect x="352" y="476" width="150" height="44" rx="22" fill="#4f9cf9" fill-opacity="0.12" stroke="#4f9cf9" stroke-opacity="0.45"/>
+    <text x="427" y="504" text-anchor="middle" fill="#93c5fd">Managed IT</text>
+    <rect x="516" y="476" width="190" height="44" rx="22" fill="#4f9cf9" fill-opacity="0.12" stroke="#4f9cf9" stroke-opacity="0.45"/>
+    <text x="611" y="504" text-anchor="middle" fill="#93c5fd">Cloud &amp; Security</text>
   </g>
 
-  <!-- Divider -->
-  <rect x="90" y="430" width="80" height="4" fill="#c8960c"/>
-
-  <!-- Tagline -->
-  <text x="90" y="490" font-family="'Syne','Helvetica Neue',Arial,sans-serif" font-weight="700" font-size="44" fill="#f0ede8">
-    WEB. <tspan fill="#c8960c">BRAND.</tspan> <tspan fill="#4f9cf9">IT.</tspan> GROWTH.
-  </text>
-
-  <!-- Subtext -->
-  <text x="90" y="540" font-family="'DM Sans','Helvetica Neue',Arial,sans-serif" font-weight="400" font-size="26" fill="#a0a0b8">
-    Calgary's digital marketing + managed IT — one team, one invoice.
-  </text>
-
-  <!-- Bottom corner badge -->
-  <text x="90" y="590" font-family="'Space Mono','Courier New',monospace" font-weight="700" font-size="20" fill="#3a3a55" letter-spacing="4">CALGARY · AB · CANADA</text>
-  <text x="1110" y="590" text-anchor="end" font-family="'Space Mono','Courier New',monospace" font-weight="700" font-size="20" fill="#3a3a55" letter-spacing="4">ZIVIODIGITAL</text>
+  <!-- Footer line -->
+  <rect x="80" y="562" width="1040" height="1" fill="#ffffff" fill-opacity="0.08"/>
+  <text x="80" y="596" class="body" font-size="17" font-weight="500" fill="#6c6c88" letter-spacing="2">CALGARY · ALBERTA · CANADA</text>
+  <text x="1120" y="596" class="body" font-size="17" font-weight="500" fill="#6c6c88" text-anchor="end">ziviodigital.netlify.app</text>
 </svg>
