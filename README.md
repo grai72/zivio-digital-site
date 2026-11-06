@@ -4,6 +4,7 @@ The Zivio Digital agency site: complete branding, custom websites, digital marke
 
 - Live: https://ziviodigital.com (Netlify deploys automatically from `main` on GitHub `grai72/zivio-digital-site`)
 - Domains: ziviodigital.com is the main address and ziviodigital.ca redirects to it (both managed in Netlify DNS)
+- The old address ziviodigital.netlify.app redirects to ziviodigital.com through `_redirects`. Client site credits link to ziviodigital.com
 - Sister product: Zivio TapProfile, https://tapprofile.ziviodigital.com (repo `grai72/tapprofile`)
 
 ## How the site is built

@@ -1,3 +1,6 @@
+# Old Netlify address goes to the real domain
+https://ziviodigital.netlify.app/*  https://ziviodigital.com/:splat  301!
+
 # Old TapProfile page now lives on its own site
 /tapprofile    https://tapprofile.ziviodigital.com/  301!
 /tapprofile/*  https://tapprofile.ziviodigital.com/  301!
