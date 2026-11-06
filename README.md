@@ -15,7 +15,7 @@ The Zivio Digital agency site: complete branding, custom websites, digital marke
 - `robots.txt`, `sitemap.xml`, `llms.txt`: search engines and AI assistants. The home page also has structured business details (JSON-LD) in the `<head>`.
 - `og-image.svg` is the share image source; `og-image.png` (1200x630) is rendered from it with headless Edge, wrapped in a page that loads the Google fonts.
 - `images/work/`: portfolio screenshots (ARA, Skyview, Hawk Eye), JPG quality 82.
-- Contact form: Netlify Forms, form name `contact`, honeypot `bot-field`. Submissions appear in Netlify under Forms.
+- Contact form: Netlify Forms, form name `contact`, honeypot `bot-field`. Submissions appear in Netlify under Forms. `netlify/functions/submission-created.mjs` also emails each one to hello@ziviodigital.com through Resend, with the customer as reply-to (needs `RESEND_API_KEY` in Netlify). `_redirects` keeps `/netlify/*` from being readable online.
 
 ## Design
 
@@ -38,17 +38,15 @@ Hero, ticker, Services (6, plus TapProfile band), Branding (8 cards), Our Work (
 Waiting on Gurtej:
 
 - [x] Email: hello@ziviodigital.com forwards to Gmail through ImprovMX (free plan) and sends through Gmail "Send mail as". Records are in Netlify DNS. Working end to end on 2026-11-06.
-- [ ] Turn on email notifications for the `contact` form in Netlify (Site configuration > Notifications > Form submission notifications).
+- [ ] After confirming the form email reaches hello@ through Resend, turn off the backup Netlify form notification (it goes to the Netlify login email).
 - [ ] Send each client their quote so they know it's on the site.
-- [ ] Optional: Harbir Nagra's title for his quote.
 - [ ] Phone number, social media links and a booking link (e.g. Calendly) to add to the site.
-- [ ] Rename the local TapProfile folder: close Claude, then `Rename-Item C:\Users\gurte\Projects\tapprofile-starter tapprofile`.
 
 Domain follow-ups:
 
-- [ ] Fix https://ziviodigital.ca: DNS now points at Netlify, but HTTPS fails, so its certificate needs to be issued or renewed in Netlify (Domain management > HTTPS). Then confirm it redirects to ziviodigital.com.
-- [ ] Add the site to Google Search Console and submit `sitemap.xml`. Create a Google Business Profile.
-- [ ] TapProfile repo: `src/lib/siteContent.js` already links to ziviodigital.ca; check it works.
+- [x] https://ziviodigital.ca redirects to ziviodigital.com (confirmed 2026-11-06).
+- [x] Site added to Google Search Console with `sitemap.xml` submitted, and Google Business Profile created (check that verification finishes).
+- [ ] Add https://tapprofile.ziviodigital.com to Google Search Console if the ziviodigital.com property does not already cover it.
 
 Ideas for later:
 
@@ -57,5 +55,6 @@ Ideas for later:
 
 ## History
 
+- 2026-11-06: contact form submissions now also email hello@ziviodigital.com through Resend, with the customer as reply-to.
 - 2026-11-06: moved the site to ziviodigital.com and the contact address to hello@ziviodigital.com.
 - 2026-10-30: merged the redesign layout with the original colours; added branding services, Our Work portfolio with client quotes, light/dark look, SEO setup, privacy page, share image, and the TapProfile redirect.

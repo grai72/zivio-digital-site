@@ -5,3 +5,6 @@
 # Project notes are for us, not visitors
 /README.md  /404.html  404!
 /CLAUDE.md  /404.html  404!
+
+# Server scripts run on Netlify and aren't web pages
+/netlify/*  /404.html  404!
