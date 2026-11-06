@@ -20,7 +20,7 @@
 
 ## Products
 
-- Zivio TapProfile (https://tapprofile.netlify.app/): NFC cards and QR codes that open a business's own mobile page.
+- Zivio TapProfile (https://tapprofile.ziviodigital.com/): NFC cards and QR codes that open a business's own mobile page.
 
 ## Contact
 

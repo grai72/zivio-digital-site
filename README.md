@@ -4,14 +4,14 @@ The Zivio Digital agency site: complete branding, custom websites, digital marke
 
 - Live: https://ziviodigital.com (Netlify deploys automatically from `main` on GitHub `grai72/zivio-digital-site`)
 - Domains: ziviodigital.com is the main address and ziviodigital.ca redirects to it (both managed in Netlify DNS)
-- Sister product: Zivio TapProfile, https://tapprofile.netlify.app (repo `grai72/tapprofile`)
+- Sister product: Zivio TapProfile, https://tapprofile.ziviodigital.com (repo `grai72/tapprofile`)
 
 ## How the site is built
 
 - One static page, `index.html`, with all CSS and JS inline. No build step: Netlify publishes the folder as it is.
 - `privacy/index.html`: privacy policy (PIPEDA). It copies the colour tokens and light/dark switch from `index.html`; if those change, update both.
 - `404.html`: page-not-found page, same look.
-- `_redirects`: `/tapprofile` goes to tapprofile.netlify.app (the old landing page was removed), and these notes files return 404 so they aren't readable online.
+- `_redirects`: `/tapprofile` goes to tapprofile.ziviodigital.com (the old landing page was removed), and these notes files return 404 so they aren't readable online.
 - `robots.txt`, `sitemap.xml`, `llms.txt`: search engines and AI assistants. The home page also has structured business details (JSON-LD) in the `<head>`.
 - `og-image.svg` is the share image source; `og-image.png` (1200x630) is rendered from it with headless Edge, wrapped in a page that loads the Google fonts.
 - `images/work/`: portfolio screenshots (ARA, Skyview, Hawk Eye), JPG quality 82.
@@ -28,7 +28,7 @@ The Zivio Digital agency site: complete branding, custom websites, digital marke
 
 Hero, ticker, Services (6, plus TapProfile band), Branding (8 cards), Our Work (ARA Electrical, Skyview Football Club, Hawk Eye Immigration, then TapProfile and "your project"), Why Zivio, Process, Packages ("Complete Brand Launch" featured), Service areas, call-to-action, Contact form, footer.
 
-- All TapProfile links open https://tapprofile.netlify.app/ in a new tab.
+- All TapProfile links open https://tapprofile.ziviodigital.com/ in a new tab.
 - Client quotes: Pardeep Hansra (Owner, ARA Electrical Ltd.), Rajwinder Sidhu (Manager, Skyview FC), Harbir Nagra (Hawk Eye Immigration). Published 2026-10-30 with the owner's OK.
 - Gurtej designed the Skyview FC and Hawk Eye logos.
 - A "Meet the founder" section was removed on purpose; add it back once the business has grown a little.

@@ -1,6 +1,6 @@
 # Old TapProfile page now lives on its own site
-/tapprofile    https://tapprofile.netlify.app/  301!
-/tapprofile/*  https://tapprofile.netlify.app/  301!
+/tapprofile    https://tapprofile.ziviodigital.com/  301!
+/tapprofile/*  https://tapprofile.ziviodigital.com/  301!
 
 # Project notes are for us, not visitors
 /README.md  /404.html  404!
