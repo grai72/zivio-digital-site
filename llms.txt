@@ -24,7 +24,7 @@
 
 ## Contact
 
-- Website: https://ziviodigital.netlify.app/
-- Email: hello@ziviodigital.ca
-- Request a consultation: https://ziviodigital.netlify.app/#contact
-- Privacy policy: https://ziviodigital.netlify.app/privacy/
+- Website: https://ziviodigital.com/
+- Email: hello@ziviodigital.com
+- Request a consultation: https://ziviodigital.com/#contact
+- Privacy policy: https://ziviodigital.com/privacy/

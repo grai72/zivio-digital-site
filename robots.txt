@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ziviodigital.netlify.app/sitemap.xml
+Sitemap: https://ziviodigital.com/sitemap.xml

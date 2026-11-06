@@ -2,8 +2,8 @@
 
 The Zivio Digital agency site: complete branding, custom websites, digital marketing, managed IT and cloud services for Calgary businesses.
 
-- Live: https://ziviodigital.netlify.app (Netlify deploys automatically from `main` on GitHub `grai72/zivio-digital-site`)
-- Planned domain: ziviodigital.ca (not registered yet, see open items)
+- Live: https://ziviodigital.com (Netlify deploys automatically from `main` on GitHub `grai72/zivio-digital-site`)
+- Domains: ziviodigital.com is the main address and ziviodigital.ca redirects to it (both managed in Netlify DNS)
 - Sister product: Zivio TapProfile, https://tapprofile.netlify.app (repo `grai72/tapprofile`)
 
 ## How the site is built
@@ -37,17 +37,16 @@ Hero, ticker, Services (6, plus TapProfile band), Branding (8 cards), Our Work (
 
 Waiting on Gurtej:
 
-- [ ] Register **ziviodigital.ca** and set up email (Microsoft 365 suggested). Until then **hello@ziviodigital.ca cannot receive mail**, so check form submissions in Netlify.
+- [x] Email: hello@ziviodigital.com forwards to Gmail through ImprovMX (free plan) and sends through Gmail "Send mail as". Records are in Netlify DNS. Working end to end on 2026-11-06.
 - [ ] Turn on email notifications for the `contact` form in Netlify (Site configuration > Notifications > Form submission notifications).
 - [ ] Send each client their quote so they know it's on the site.
 - [ ] Optional: Harbir Nagra's title for his quote.
 - [ ] Phone number, social media links and a booking link (e.g. Calendly) to add to the site.
 - [ ] Rename the local TapProfile folder: close Claude, then `Rename-Item C:\Users\gurte\Projects\tapprofile-starter tapprofile`.
 
-When ziviodigital.ca is live:
+Domain follow-ups:
 
-- [ ] Point the domain at Netlify and make it the primary domain.
-- [ ] Replace `ziviodigital.netlify.app` with `ziviodigital.ca` in `index.html` (canonical, share tags, JSON-LD), `privacy/index.html`, `sitemap.xml`, `robots.txt`, `llms.txt` and `og-image.svg`, then re-render `og-image.png`.
+- [ ] Fix https://ziviodigital.ca: DNS now points at Netlify, but HTTPS fails, so its certificate needs to be issued or renewed in Netlify (Domain management > HTTPS). Then confirm it redirects to ziviodigital.com.
 - [ ] Add the site to Google Search Console and submit `sitemap.xml`. Create a Google Business Profile.
 - [ ] TapProfile repo: `src/lib/siteContent.js` already links to ziviodigital.ca; check it works.
 
@@ -58,4 +57,5 @@ Ideas for later:
 
 ## History
 
+- 2026-11-06: moved the site to ziviodigital.com and the contact address to hello@ziviodigital.com.
 - 2026-10-30: merged the redesign layout with the original colours; added branding services, Our Work portfolio with client quotes, light/dark look, SEO setup, privacy page, share image, and the TapProfile redirect.

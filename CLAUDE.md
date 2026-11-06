@@ -2,7 +2,7 @@
 
 Static agency site for Zivio Digital (Calgary). Notes, design and the open-items list: [README.md](README.md).
 
-- Live at https://ziviodigital.netlify.app, deployed by Netlify from `main` on GitHub `grai72/zivio-digital-site`. Pushing to `main` puts changes live.
+- Live at https://ziviodigital.com (ziviodigital.ca redirects to it), deployed by Netlify from `main` on GitHub `grai72/zivio-digital-site`. Pushing to `main` puts changes live.
 - No build step. `index.html` holds all CSS and JS inline; `privacy/index.html` and `404.html` copy its colour tokens and light/dark switch.
 - Netlify serves every file in this folder publicly. Notes files are blocked in `_redirects`; add any new notes file there too.
 
