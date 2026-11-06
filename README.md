@@ -47,7 +47,7 @@ Domain follow-ups:
 
 - [x] https://ziviodigital.ca redirects to ziviodigital.com (confirmed 2026-11-06).
 - [x] Site added to Google Search Console with `sitemap.xml` submitted, and Google Business Profile created (check that verification finishes).
-- [ ] Add https://tapprofile.ziviodigital.com to Google Search Console if the ziviodigital.com property does not already cover it.
+- [x] https://tapprofile.ziviodigital.com is covered by the ziviodigital.com Search Console property; its sitemap was read successfully (21 pages) on 2026-11-06.
 
 Ideas for later:
 
