@@ -17,6 +17,7 @@ The Zivio Digital agency site: complete branding, custom websites, digital marke
 - `og-image.svg` is the share image source; `og-image.png` (1200x630) is rendered from it with headless Edge, wrapped in a page that loads the Google fonts.
 - `images/work/`: portfolio screenshots (ARA, Skyview, Hawk Eye), JPG quality 82.
 - Contact form: Netlify Forms, form name `contact`, honeypot `bot-field`. Submissions appear in Netlify under Forms. `netlify/functions/submission-created.mjs` also emails each one to hello@ziviodigital.com through Resend, with the customer as reply-to (needs `RESEND_API_KEY` in Netlify). `_redirects` keeps `/netlify/*` from being readable online.
+- Phone: 587-206-5600 is a Retell number (Bandwidth, no texting) answered by the Retell agent "Zivio Receptionist", which says the call is recorded and transcribed. Retell keeps call recordings and transcripts for 90 days (agent's Data Storage setting), as the privacy page says; change both together. After each call Retell posts `call_analyzed` to `/.netlify/functions/retell-call-summary`, which checks Retell's signature and emails a summary and transcript to hello@ from calls@ziviodigital.com (subject starts "URGENT:" when flagged; missed calls get a short email). Needs `RETELL_API_KEY` (the Retell key with the webhook badge) and `RESEND_API_KEY` in Netlify. The field names it reads (`caller_name`, `business_name`, `callback_number`, `email`, `need`, `services`, `timeline`, `best_time`, `next_step`, `urgent`, `call_type`) must match the agent's post-call extraction fields.
 
 ## Design
 
@@ -41,7 +42,8 @@ Waiting on Gurtej:
 - [x] Email: hello@ziviodigital.com forwards to Gmail through ImprovMX (free plan) and sends through Gmail "Send mail as". Records are in Netlify DNS. Working end to end on 2026-11-06.
 - [ ] After confirming the form email reaches hello@ through Resend, turn off the backup Netlify form notification (it goes to the Netlify login email).
 - [ ] Send each client their quote so they know it's on the site.
-- [ ] Phone number, social media links and a booking link (e.g. Calendly) to add to the site.
+- [x] Phone number 587-206-5600 on the site (contact section, footer, business details, privacy page, llms.txt), 2026-11-07.
+- [ ] Social media links and a booking link (e.g. Calendly) to add to the site.
 
 Domain follow-ups:
 
@@ -55,6 +57,8 @@ Ideas for later:
 - [ ] Founder section, more case studies, a short blog or FAQ for local search.
 
 ## History
+
+- 2026-11-07: AI phone answering on 587-206-5600 (Retell), with call summaries emailed to hello@.
 
 - 2026-11-06: contact form submissions now also email hello@ziviodigital.com through Resend, with the customer as reply-to.
 - 2026-11-06: moved the site to ziviodigital.com and the contact address to hello@ziviodigital.com.
