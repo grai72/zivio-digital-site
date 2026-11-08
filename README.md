@@ -40,15 +40,16 @@ Hero, ticker, Services (6, plus TapProfile band), Branding (8 cards), Our Work (
 Waiting on Gurtej:
 
 - [x] Email: hello@ziviodigital.com forwards to Gmail through ImprovMX (free plan) and sends through Gmail "Send mail as". Records are in Netlify DNS. Working end to end on 2026-11-06.
-- [ ] After confirming the form email reaches hello@ through Resend, turn off the backup Netlify form notification (it goes to the Netlify login email).
-- [ ] Send each client their quote so they know it's on the site.
+- [x] Contact form tested by Gurtej, 2026-11-07. Backup Netlify form notification turned off, 2026-11-08. Form emails now come only through Resend to hello@; submissions are still listed in Netlify under Forms.
+- [x] Each client told their quote is on the site (confirmed 2026-11-08).
 - [x] Phone number 587-206-5600 on the site (contact section, footer, business details, privacy page, llms.txt), 2026-11-07.
-- [ ] Social media links and a booking link (e.g. Calendly) to add to the site.
+- [x] Instagram link https://www.instagram.com/ziviodigital/ on the site (contact section, footer, business details, llms.txt) and on the Google Business Profile, 2026-11-08.
+- [ ] Other social media links and a booking link (e.g. Calendly) to add to the site.
 
 Domain follow-ups:
 
 - [x] https://ziviodigital.ca redirects to ziviodigital.com (confirmed 2026-11-06).
-- [x] Site added to Google Search Console with `sitemap.xml` submitted, and Google Business Profile created (check that verification finishes).
+- [x] Site added to Google Search Console with `sitemap.xml` submitted, and Google Business Profile created. Gurtej reviewed the profile on 2026-11-08 and considers it verified; it wasn't showing yet in signed-out Google or Maps searches that day, so check again in a few days.
 - [x] https://tapprofile.ziviodigital.com is covered by the ziviodigital.com Search Console property; its sitemap was read successfully (21 pages) on 2026-11-06.
 
 Ideas for later:
